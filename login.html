@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In</title>
+        <link rel="stylesheet" href="login.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body class="body">
+        <form class="formlogin" >
+            <div class="leftform">
+                <h1>Sign In</h1>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <p id="paragraph">or use your account</p>
+                <div class="mb-3">
+                <input class="field" type="email" id="email" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                <input class="field" type="password" id="password" placeholder="Password">
+                </div>
+                <div class="forgetpassword">
+                <a href="#"><p id="paragraph">Forget your password?</p></a>
+                </div>
+                <button onclick=validotedhenat() type="submit" class="btn btn-primary" id="buttonsignin">SIGN IN</button>
+            </div>
+            <div class="rightform">
+                <a href="index.html"><p id="paragraph1">HOME &#8656</p></a>
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start </br> journey with us</p>
+                <button formaction="ushtrime/../signup.html" type="submit" class="btn btn-primary" id="buttonsignup">SIGN UP</button>
+            </div>
+          </form>
+          <script>
+            function validotedhenat(){
+                var email=document.getElementById("email").value;
+                var password=document.getElementById("password").value;
+                if(email.length>1 && password.length>1 && email.includes("@"))
+                {
+                    alert("Successfully!");
+                }
+                else{
+                    alert("Email and password must be valid!")
+                }
+            }
+            function signuppage(){
+                window.open('page.html', '_self');
+            }
+
+          </script>
+    </body>
+
+
+
+</html>
